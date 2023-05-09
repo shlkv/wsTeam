@@ -1,0 +1,134 @@
+.footer {
+    padding: 60px 0 30px;
+}
+
+.footer__content {
+    margin: auto;
+    color: white;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__company-name {
+    display: flex;
+    align-items: center;
+
+    .company-name {
+        font-size: 34px;
+        font-weight: 700;
+        color: $blue;
+    }
+}
+
+.footer__about-company {
+    margin-top: 40px;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer__company {
+    max-width: 56.1%;
+}
+
+.footer__socials-list {
+    display: flex;
+    align-items: center;
+
+    li {
+
+        a {
+            line-height: 0.1;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $blue;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+
+    .tg-link svg {
+        position: relative;
+        right: 1px;
+    }
+
+    .wa-link svg {
+        position: relative;
+        left: 0.3px;
+        bottom: 0.6px;
+    }
+
+    li:nth-child(n+2) {
+        margin-left: 15px;
+    }
+
+    li:hover a {
+        background-color: #4552b4;
+    }
+}
+.footer-content__mini{
+    display: none;
+}
+
+.footer__contacts {
+    margin-top: 34px;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    a {
+        color: inherit;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.footer__sub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 112px;
+    font-weight: 400;
+
+}
+
+.footer__links-list {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+    li a {
+        color: white;
+        transition: 0.3s;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    li a:hover {
+        color: $blue;
+
+    }
+
+    li:nth-child(n+2) {
+        margin-left: 20px;
+    }
+}
+.footer__copyright{
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer__sub--mobile{
+    display: none;
+}

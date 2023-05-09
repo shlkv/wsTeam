@@ -1,0 +1,61 @@
+.questions{
+  margin-top: 116px;
+  display: flex;
+  justify-content: space-between;
+}
+.questions-header{
+  width: 34%;
+}
+.question-description{
+  margin-top: 20px;
+  color: $grey;
+  font-weight: 600;
+  line-height: 24px;
+  a{
+    color: $blue !important;
+  }
+}
+//  a:hover{
+//   color: $darkBlue !important;
+//   cursor: pointer !important;
+// }
+.accordion{
+  width: 65%;
+}
+.accordion-item{
+  background-color: transparent !important;
+  color: $grey;
+  border-bottom: 1px solid rgba(240, 237, 244, 0.115) !important;
+
+}
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+  color: white !important;
+  font-weight: 600;
+}
+.accordion-button{
+  background-color: transparent !important;
+  color: white !important;
+  padding: 2rem 1.25rem !important;
+  font-weight: 600;
+}
+.accordion-header{
+  color: white !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: rgba(0,0,0,.125);
+}
+.accordion-button::after{
+  background-image: url(/img/questions/chevron-up.png) !important;
+  transform: rotate(-180deg) !important;
+}
+.accordion-button:not(.collapsed)::after{
+  transform: rotate(-360deg) !important;
+}
+.accordion-body{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  color: rgba(255, 255, 255, 0.56);
+}
